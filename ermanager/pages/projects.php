@@ -373,7 +373,7 @@ elseif($down>0 && mysqli_num_rows(mysqli_query($db,"select id from $do where aut
 
             if($row["active"]==1) $title='Active'; else $title='Deactive';
             echo '<img src="images/'.$row["active"].'_lamp.png" title="'.$title.'" border="0" align="absmiddle" style="cursor:pointer" id="info_'.$row["auto_id"].'" onclick="aktivlik(\''.$do.'\',this.id,this.title)"  />
-            <a href="index.php?do=gallery&projects='.$row['auto_id'].'"><img src="images/gallery.png" alt="" title="Qalereya" /></a>';
+           ';
             echo '</td>
 				</tr>';
             $i++;
