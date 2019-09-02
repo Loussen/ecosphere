@@ -207,84 +207,50 @@ require_once "ermanager/pages/includes/config.php";
                 <div class="sec-title light">
                     <div class="clearfix">
                         <div class="pull-left">
-                            <h2>Our Projects</h2>
+                            <h2>Proyektlər</h2>
                         </div>
                         <div class="pull-right">
-                            <a href="projects.html" class="projects">Hamısına bax</a>
+                            <a href="<?=SITE_PATH?>/project" class="projects">Hamısına bax</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="row clearfix">
+                    <?php
+                        $stmt_select = mysqli_prepare($db,
+                            "SELECT
+                            *
+                            FROM `projects`
+                            WHERE `lang_id`=(?) and `active`=(?)
+                            order by `created_at` desc limit 4");
 
-                    <!--Services Block Two-->
-                    <div class="services-block-two col-md-3 col-sm-6 col-xs-12">
-                        <div class="inner-box">
-                            <div class="image">
-                                <img src="images/gallery/1.jpg" alt="" />
-                                <div class="content-overlay">
-                                    <div class="overlay-inner">
-                                        <div class="content-box">
-                                            <h4><a href="project-detail.html">Agricultural</a></h4>
-                                            <a href="project-detail.html" class="detail">Detalları</a>
+                        $stmt_select->bind_param('ii', $main_lang,$active_status);
+                        $stmt_select->execute();
+                        $result_projects = $stmt_select->get_result();
+                        $stmt_select->close();
+
+                        while($row=$result_projects->fetch_assoc())
+                        {
+                            ?>
+                            <!--Services Block Two-->
+                            <div class="services-block-two col-md-3 col-sm-6 col-xs-12">
+                                <div class="inner-box">
+                                    <div class="image">
+                                        <img style="height: 270px;" src="<?=SITE_PATH?>/images/projects/<?=$row['image_name']?>" alt="<?=$row['title']?>" />
+                                        <div class="content-overlay">
+                                            <div class="overlay-inner">
+                                                <div class="content-box">
+                                                    <h4><a href="<?=SITE_PATH."/project/".slugGenerator($row['title'])."-".$row['auto_id']?>"><?=$row['title']?></a></h4>
+                                                    <a href="<?=SITE_PATH."/project/".slugGenerator($row['title'])."-".$row['auto_id']?>" class="detail">Detalları</a>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-
-                    <!--Services Block Two-->
-                    <div class="services-block-two col-md-3 col-sm-6 col-xs-12">
-                        <div class="inner-box">
-                            <div class="image">
-                                <img src="images/gallery/2.jpg" alt="" />
-                                <div class="content-overlay">
-                                    <div class="overlay-inner">
-                                        <div class="content-box">
-                                            <h4><a href="project-detail.html">Agricultural</a></h4>
-                                            <a href="project-detail.html" class="detail">Detalları</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--Services Block Two-->
-                    <div class="services-block-two col-md-3 col-sm-6 col-xs-12">
-                        <div class="inner-box">
-                            <div class="image">
-                                <img src="images/gallery/3.jpg" alt="" />
-                                <div class="content-overlay">
-                                    <div class="overlay-inner">
-                                        <div class="content-box">
-                                            <h4><a href="project-detail.html">Agricultural</a></h4>
-                                            <a href="project-detail.html" class="detail">Detalları</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--Services Block Two-->
-                    <div class="services-block-two col-md-3 col-sm-6 col-xs-12">
-                        <div class="inner-box">
-                            <div class="image">
-                                <img src="images/gallery/4.jpg" alt="" />
-                                <div class="content-overlay">
-                                    <div class="overlay-inner">
-                                        <div class="content-box">
-                                            <h4><a href="project-detail.html">Agricultural</a></h4>
-                                            <a href="project-detail.html" class="detail">Detalları</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
+                            <?php
+                        }
+                    ?>
                 </div>
             </div>
         </section>

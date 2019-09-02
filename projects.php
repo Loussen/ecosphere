@@ -49,7 +49,7 @@
 
                     <?php
                         // Paginator
-                        $limit = 6;
+                        $limit = 18;
 
                         $stmt_select = mysqli_prepare($db,
                             "SELECT
