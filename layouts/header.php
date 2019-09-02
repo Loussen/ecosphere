@@ -38,7 +38,7 @@
             <div class="outer-container clearfix">
                 <!--Logo Box-->
                 <div class="logo-box">
-                    <div class="logo"><a href="index.html"><img src="images/logo_eco_dark.png" style="width: 200px; height: 70px;" alt=""></a></div>
+                    <div class="logo"><a href="<?=SITE_PATH?>"><img src="images/logo_eco_dark.png" style="width: 200px; height: 70px;" alt=""></a></div>
                 </div>
 
                 <!--Nav Outer-->

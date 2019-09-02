@@ -34,8 +34,9 @@ require_once "ermanager/pages/includes/config.php";
             <div class="auto-container">
                 <div class="inner-container clearfix">
                     <ul class="bread-crumb pull-left">
-                        <li><a href="index.html">Ana Səhifə</a></li>
-                        <li><a href="services.html">Xidmətlərimiz</a></li>
+                        <?php
+                            require_once "layouts/breadcrumb.php";
+                        ?>
                         <li>HVAC Sistemləri</li>
                     </ul>
                 </div>

@@ -98,7 +98,7 @@
             <div class="auto-container">
                 <div class="inner-container clearfix">
                     <ul class="bread-crumb pull-left">
-                        <li><a href="index-2.html">Home</a></li>
+                        <li><a href="<?=SITE_PATH?>">Home</a></li>
                         <li>Projects details</li>
                     </ul>
                     <div class="text pull-right">Certified Company ISO 9001-2008</div>

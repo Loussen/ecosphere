@@ -39,7 +39,7 @@ require_once "ermanager/pages/includes/config.php";
             <div class="auto-container">
                 <div class="inner-container clearfix">
                     <ul class="bread-crumb pull-left">
-                        <li><a href="index.html">Ana Səhifə</a></li>
+                        <li><a href="<?=SITE_PATH?>">Ana Səhifə</a></li>
                         <li>Haqqımızda</li>
                     </ul>
                 </div>

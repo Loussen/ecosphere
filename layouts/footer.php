@@ -26,11 +26,11 @@
                                 <h2>Quick Links</h2>
                                 <div class="widget-content">
                                     <ul class="list">
-                                        <li><a href="#">Home</a></li>
-                                        <li><a href="#">About Us</a></li>
-                                        <li><a href="#">Testimonials</a></li>
-                                        <li><a href="#">Request Call Back</a></li>
-                                        <li><a href="#">Contact Us</a></li>
+                                        <li><a href="<?=SITE_PATH?>">Ana səhifə</a></li>
+                                        <li><a href="<?=SITE_PATH?>/about">Haqqımızda</a></li>
+                                        <li><a href="<?=SITE_PATH?>/services">Xidmətlər</a></li>
+                                        <li><a href="<?=SITE_PATH?>/projects">Proyektlər</a></li>
+                                        <li><a href="<?=SITE_PATH?>/contact">Əlaqə</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -48,10 +48,10 @@
                                 <h2>Xidmətlərimiz</h2>
                                 <div class="widget-content">
                                     <ul class="list">
-                                        <li><a href="#">HVAC Sistemləri</a></li>
-                                        <li><a href="#">Yanğından Mühafizə</a></li>
-                                        <li><a href="#">Layihələndirmə</a></li>
-                                        <li><a href="#">Montaj</a></li>
+                                        <li><a href="<?=SITE_PATH?>/hvac">HVAC Sistemləri</a></li>
+                                        <li><a href="<?=SITE_PATH?>/services">Yanğından Mühafizə</a></li>
+                                        <li><a href="<?=SITE_PATH?>/fire-protection">Layihələndirmə</a></li>
+                                        <li><a href="<?=SITE_PATH?>/montaj">Montaj</a></li>
                                     </ul>
                                 </div>
                             </div>
