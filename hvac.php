@@ -121,14 +121,9 @@ require_once "ermanager/pages/includes/config.php";
                         <aside class="sidebar">
 
                             <!--Blog Category Widget-->
-                            <div class="sidebar-widget sidebar-blog-category">
-                                <ul class="blog-cat">
-                                    <li><a href="hvac.html">HVAC Sistemləri</a></li>
-                                    <li><a href="fire-protection.html">Yanğından Mühafizə</a></li>
-                                    <li><a href="management.html">Layihələndirmə</a></li>
-                                    <li><a href="montaj.html">Montaj</a></li>
-                                </ul>
-                            </div>
+                            <?php
+                                require_once "layouts/left.php";
+                            ?>
 
                             <!--Contact Widhet-->
                             <div class="sidebar-widget contact-info-widget">
