@@ -8,9 +8,9 @@
                 <!--Top Left-->
                 <div class="top-left">
                     <ul class="links clearfix">
-                        <li><a href="#">+99455 123 45 67</a></li>
-                        <li><a href="#"><span class="icon flaticon-note-1"></span>info@ecosphere.com</a></li>
-                        <li><a href="#"><span class="icon flaticon-pin"></span>56, Yusif Seferov, Azerbaijan</a>
+                        <li><a href="tel:<?=$contact_config['phone']?>"><?=$contact_config['phone']?></a></li>
+                        <li><a href="mailto:<?=$contact_config['email']?>"><span class="icon flaticon-note-1"></span><?=$contact_config['email']?></a></li>
+                        <li><a href="#"><span class="icon flaticon-pin"></span><?=$contact_config['address']?></a>
                         </li>
                     </ul>
                 </div>

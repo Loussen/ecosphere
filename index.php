@@ -122,7 +122,7 @@ require_once "ermanager/pages/includes/config.php";
                                 <h2>Haqqımızda</h2>
                             </div>                           
                             <div class="text">Şirkətimiz 2012-ci ildən rəsmi olaraq fəaliyyətə başlamışdır. Fəaliyyət sahəsi olaraq proyektlərin layihələndirilməsi və layihələrə uyğun olaraq müəyyən olunmuş işlərin görülməsi və uyğun olaraq qiymət təkliflərinin hazırlanması. Şirkətimiz əsasən mexaniki quraşdırma işləri üzrə ixtisaslaşmışdır.</div>
-                            <a href="about.html" class="theme-btn btn-style-one">Daha çox</a>
+                            <a href="<?=SITE_PATH?>/about" class="theme-btn btn-style-one">Daha çox</a>
                         </div>
                     </div>
                     <!--Video Column-->
@@ -145,7 +145,7 @@ require_once "ermanager/pages/includes/config.php";
                 <div class="sec-title">
                     <h2>Xidmətlərimiz</h2>
                     <div class="pull-right">
-                        <a href="project-classic.html" class="projects">Hamısına bax</a>
+                        <a href="<?=SITE_PATH?>/services" class="projects">Hamısına bax</a>
                     </div>
                     <!-- <div class="text">Bring to the table win-win survival strategies to ensure proactive domination. At
                         the end of the day, going forward, a new normal that has evolved from generation X is on the
@@ -158,11 +158,11 @@ require_once "ermanager/pages/includes/config.php";
                     <div class="services-block col-md-4 col-sm-6 col-xs-12">
                         <div class="inner-box">
                             <div class="image">
-                                <a href="material-engineering.html"><img src="images/resource/service-1.jpg"
+                                <a href="<?=SITE_PATH?>/hvac"><img src="images/resource/service-1.jpg"
                                         alt="" /></a>
                             </div>
                             <div class="lower-content">
-                                <h3><a href="material-engineering.html">HVAC Sistemləri</a></h3>
+                                <h3><a href="<?=SITE_PATH?>/hvac">HVAC Sistemləri</a></h3>
                             </div>
                         </div>
                     </div>
@@ -171,11 +171,11 @@ require_once "ermanager/pages/includes/config.php";
                     <div class="services-block col-md-4 col-sm-6 col-xs-12">
                         <div class="inner-box">
                             <div class="image">
-                                <a href="material-engineering.html"><img src="images/resource/service-2.jpg"
+                                <a href="<?=SITE_PATH?>/fire-protection"><img src="images/resource/service-2.jpg"
                                         alt="" /></a>
                             </div>
                             <div class="lower-content">
-                                <h3><a href="material-engineering.html">Yanğından Mühafizə</a></h3>
+                                <h3><a href="<?=SITE_PATH?>/fire-protection">Yanğından Mühafizə</a></h3>
                             </div>
                         </div>
                     </div>
@@ -184,11 +184,11 @@ require_once "ermanager/pages/includes/config.php";
                     <div class="services-block col-md-4 col-sm-6 col-xs-12">
                         <div class="inner-box">
                             <div class="image">
-                                <a href="material-engineering.html"><img src="images/resource/service-4.jpg"
+                                <a href="<?=SITE_PATH?>/management"><img src="images/resource/service-4.jpg"
                                         alt="" /></a>
                             </div>
                             <div class="lower-content">
-                                <h3><a href="material-engineering.html">Layihələndirmə</a></h3>
+                                <h3><a href="<?=SITE_PATH?>/management">Layihələndirmə</a></h3>
                             </div>
                         </div>
                     </div>

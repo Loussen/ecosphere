@@ -14,9 +14,7 @@
                                 <div class="logo">
                                     <a href="<?=SITE_PATH?>"><img src="images/logo_eco_footer.png" alt="" /></a>
                                 </div>
-                                <div class="text">8 ildən artıq müddətdə fəaliyyetimizin bizə qazandırdığı
-                                    təcrübə, sahəsinin peşəkarı olan işçi kollektivimiz və gördüyümüz işlərin
-                                    keyfiyyətinə zəmanətlə sizin xidmətinizdəyik.</div>
+                                <div class="text"><?=nl2br($contact_config['footer'])?></div>
                             </div>
                         </div>
 
@@ -62,8 +60,8 @@
                             <div class="footer-widget info-widget">
                                 <h2>Əlaqə</h2>
                                 <div class="widget-content">
-                                    <div class="number">(99455) 123 45 67</div>
-                                    <div class="text">56, Yusif Seferov, Azerbaijan ecosphere@contact.gmail.com
+                                    <div class="number"><?=$contact_config['phone']?></div>
+                                    <div class="text"><?=$contact_config['address']?> <?=$contact_config['email']?>
                                     </div>
                                     <ul class="social-icon-one">
                                         <li><a href="#"><span class="fa fa-facebook"></span></a></li>

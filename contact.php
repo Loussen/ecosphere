@@ -108,9 +108,9 @@ require_once "ermanager/pages/includes/config.php";
                     <div class="info-column col-md-4 col-sm-12 col-xs-12">
                         <div class="inner-column">
                             <ul>
-                                <li><span>Ünvan:</span>56, Yusif Seferov, Azerbaijan</li>
-                                <li><span>email:</span>info@ecosphere.com</li>
-                                <li><span>Telefon nömrəsi:</span>(99455) 123 45 67</li>
+                                <li><span>Ünvan:</span><?=$contact_config['address']?></li>
+                                <li><span>email:</span><?=$contact_config['email']?></li>
+                                <li><span>Telefon nömrəsi:</span><?=$contact_config['phone']?></li>
                             </ul>
                         </div>
                     </div>
