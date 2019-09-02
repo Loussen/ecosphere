@@ -6,11 +6,8 @@
         $project_id = intval($_GET['id']);
         $project_slug = mysqli_real_escape_string($db,$_GET['slug']);
 
-        // Get news info
-        if(!$cache->isCached('project_inner_'.$project_id.$project_slug.$main_lang))
-        {
-            $stmt_select = mysqli_prepare($db,
-                "SELECT
+        $stmt_select = mysqli_prepare($db,
+            "SELECT
                             `projects`.`auto_id` as `projects_id`,
                             `projects`.`title` as `projects_title`,
                             `projects`.`image_name` as `projects_image_name`,
@@ -24,40 +21,11 @@
                             FROM `projects`
                             WHERE `projects`.`lang_id`=(?) and `projects`.`active`=(?) and `projects`.`auto_id`=(?) and `projects`.`title`!=''
                             ");
-            $stmt_select->bind_param('iii', $main_lang,$active_status,$project_id);
-            $stmt_select->execute();
-            $stmt_select->bind_result($current_projects_id,$current_projects_title,$current_projects_image_name,$current_projects_text,$current_projects_date,$current_projects_customer,$current_projects_category,$current_projects_status,$current_projects_demo,$current_projects_tags);
-            $stmt_select->fetch();
-            $stmt_select->close();
-
-            $cache->store('project_inner_'.$project_id.$project_slug.$main_lang,[
-                'current_projects_id'           => $current_projects_id,
-                'current_projects_title'        => $current_projects_title,
-                'current_projects_image_name'   => $current_projects_image_name,
-                'current_projects_text'         => $current_projects_text,
-                'current_projects_date'   => $current_projects_date,
-                'current_projects_customer'         => $current_projects_customer,
-                'current_projects_category'         => $current_projects_category,
-                'current_projects_status'         => $current_projects_status,
-                'current_projects_demo'         => $current_projects_demo,
-                'current_projects_tags'         => $current_projects_tags,
-            ],1000);
-        }
-        else
-        {
-            $cache_project_inner_result = $cache->retrieve('project_inner_'.$project_id.$project_slug.$main_lang);
-
-            $current_projects_id = $cache_project_inner_result['current_projects_id'];
-            $current_projects_title = $cache_project_inner_result['current_projects_title'];
-            $current_projects_image_name = $cache_project_inner_result['current_projects_image_name'];
-            $current_projects_text = $cache_project_inner_result['current_projects_text'];
-            $current_projects_date = $cache_project_inner_result['current_projects_date'];
-            $current_projects_customer = $cache_project_inner_result['current_projects_customer'];
-            $current_projects_category = $cache_project_inner_result['current_projects_category'];
-            $current_projects_status = $cache_project_inner_result['current_projects_status'];
-            $current_projects_demo = $cache_project_inner_result['current_projects_demo'];
-            $current_projects_tags = $cache_project_inner_result['current_projects_tags'];
-        }
+        $stmt_select->bind_param('iii', $main_lang,$active_status,$project_id);
+        $stmt_select->execute();
+        $stmt_select->bind_result($current_projects_id,$current_projects_title,$current_projects_image_name,$current_projects_text,$current_projects_date,$current_projects_customer,$current_projects_category,$current_projects_status,$current_projects_demo,$current_projects_tags);
+        $stmt_select->fetch();
+        $stmt_select->close();
     }
     else
     {

@@ -210,7 +210,7 @@ require_once "ermanager/pages/includes/config.php";
                             <h2>Proyektlər</h2>
                         </div>
                         <div class="pull-right">
-                            <a href="<?=SITE_PATH?>/project" class="projects">Hamısına bax</a>
+                            <a href="<?=SITE_PATH?>/projects" class="projects">Hamısına bax</a>
                         </div>
                     </div>
                 </div>

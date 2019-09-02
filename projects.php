@@ -68,32 +68,23 @@
                         $start=$page*$limit-$limit;
                         $stmt_select->close();
 
-                        if(!$cache->isCached('result_projects_'.$page.$main_lang))
+                        // Get news by category
+                        $stmt_select = mysqli_prepare($db,
+                            "SELECT
+                            *
+                            FROM `projects`
+                            WHERE `lang_id`=(?) and `active`=(?)
+                            order by `created_at` desc limit $start,$limit");
+
+                        $stmt_select->bind_param('ii', $main_lang,$active_status);
+                        $stmt_select->execute();
+                        $result_projects = $stmt_select->get_result();
+                        $stmt_select->close();
+
+                        $result_projects_arr = [];
+                        while($row=$result_projects->fetch_assoc())
                         {
-                            // Get news by category
-                            $stmt_select = mysqli_prepare($db,
-                                "SELECT
-                        *
-                        FROM `projects`
-                        WHERE `lang_id`=(?) and `active`=(?)
-                        order by `created_at` desc limit $start,$limit");
-
-                            $stmt_select->bind_param('ii', $main_lang,$active_status);
-                            $stmt_select->execute();
-                            $result_projects = $stmt_select->get_result();
-                            $stmt_select->close();
-
-                            $result_projects_arr = [];
-                            while($row=$result_projects->fetch_assoc())
-                            {
-                                $result_projects_arr[] = $row;
-                            }
-
-                            $cache->store('result_projects_'.$page.$main_lang,$result_projects_arr, 300);
-                        }
-                        else
-                        {
-                            $result_projects_arr = $cache->retrieve('result_projects_'.$page.$main_lang);
+                            $result_projects_arr[] = $row;
                         }
 
                         foreach ($result_projects_arr as $item)
