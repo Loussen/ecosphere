@@ -69,25 +69,9 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <title>NorTech - Industries and Factories HTML Template | Project Detail</title>
-    <!-- Stylesheets -->
-    <link href="<?=SITE_PATH?>/css/bootstrap.css" rel="stylesheet">
-    <link href="<?=SITE_PATH?>/css/style.css" rel="stylesheet">
-    <link href="<?=SITE_PATH?>/css/responsive.css" rel="stylesheet">
-
-    <!--Color Switcher Mockup-->
-    <link href="<?=SITE_PATH?>/css/color-switcher-design.css" rel="stylesheet">
-
-    <!--Color Themes-->
-    <link id="theme-color-file" href="<?=SITE_PATH?>/css/color-themes/default-theme.css" rel="stylesheet">
-
-    <link rel="shortcut icon" href="<?=SITE_PATH?>/images/favicon.png" type="image/x-icon">
-    <link rel="icon" href="<?=SITE_PATH?>/images/favicon.png" type="image/x-icon">
-    <!-- Responsive -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-
+    <?php
+    require_once "layouts/head.php";
+    ?>
 </head>
 
 <body>
@@ -95,139 +79,9 @@
     <div class="page-wrapper">
 
         <!-- Main Header-->
-        <header class="main-header">
-
-            <!-- Header Top -->
-            <div class="header-top">
-                <div class="auto-container">
-                    <div class="inner-container clearfix">
-
-                        <!--Top Left-->
-                        <div class="top-left">
-                            <ul class="links clearfix">
-                                <li><a href="#">+99455 123 45 67</a></li>
-                                <li><a href="#"><span class="icon flaticon-note-1"></span>info@ecosphere.com</a></li>
-                                <li><a href="#"><span class="icon flaticon-pin"></span>56, Yusif Seferov, Azerbaijan</a>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <!--Top Right-->
-                        <div class="top-right clearfix">
-                            <!--social-icon-->
-                            <div class="social-icon">
-                                <ul class="clearfix">
-                                    <li><a href="#"><span class="fa fa-facebook"></span></a></li>
-                                    <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-            <!-- Header Top End -->
-
-            <!-- Main Box -->
-            <div class="main-box">
-                <div class="auto-container">
-                    <div class="outer-container clearfix">
-                        <!--Logo Box-->
-                        <div class="logo-box">
-                            <div class="logo"><a href="index.html"><img src="<?=SITE_PATH?>/images/logo_eco_dark.png"
-                                        style="width: 200px; height: 70px;" alt=""></a></div>
-                        </div>
-
-                        <!--Nav Outer-->
-                        <div class="nav-outer clearfix">
-
-                            <!-- Main Menu -->
-                            <nav class="main-menu">
-                                <div class="navbar-header">
-                                    <!-- Toggle Button -->
-                                    <button type="button" class="navbar-toggle" data-toggle="collapse"
-                                        data-target=".navbar-collapse">
-                                        <span class="icon-bar"></span>
-                                        <span class="icon-bar"></span>
-                                        <span class="icon-bar"></span>
-                                    </button>
-                                </div>
-
-                                <div class="navbar-collapse collapse clearfix">
-                                    <ul class="navigation clearfix">
-                                        <li><a href="index.html">Ana Səhifə</a></li>
-                                        <li><a href="about.html">Haqqımızda</a></li>
-                                        <li class="dropdown"><a href="#">Xidmətlərimiz</a>
-                                            <ul>
-                                                <li><a href="services.html">Bütün Xidmətlər</a></li>
-                                                <li><a href="hvac.html">HVAC Sistemləri</a></li>
-                                                <li><a href="fire-protection.html">Yanğından Mühafizə</a></li>
-                                                <li><a href="management.html">Layihələndirmə</a></li>
-                                                <li><a href="montaj.html">Montaj</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="projects.html">Proyektlər</a></li>
-                                        <li><a href="contact.html">Əlaqə</a></li>
-                                    </ul>
-                                </div>
-                            </nav>
-                            <!-- Main Menu End-->
-                        </div>
-                        <!--Nav Outer End-->
-                    </div>
-                </div>
-            </div>
-
-            <!--Sticky Header-->
-            <div class="sticky-header">
-                <div class="auto-container">
-                    <div class="sticky-inner-container clearfix">
-                        <!--Logo-->
-                        <div class="logo pull-left">
-                            <a href="index.html" class="img-responsive"><img src="<?=SITE_PATH?>/images/logo_eco_small.png" alt=""
-                                    title=""></a>
-                        </div>
-
-                        <!--Right Col-->
-                        <div class="right-col pull-right">
-                            <!-- Main Menu -->
-                            <nav class="main-menu">
-                                <div class="navbar-header">
-                                    <!-- Toggle Button -->
-                                    <button type="button" class="navbar-toggle" data-toggle="collapse"
-                                        data-target=".navbar-collapse">
-                                        <span class="icon-bar"></span>
-                                        <span class="icon-bar"></span>
-                                        <span class="icon-bar"></span>
-                                    </button>
-                                </div>
-
-                                <div class="navbar-collapse collapse clearfix">
-                                    <ul class="navigation clearfix">
-                                        <li><a href="index.html">Ana Səhifə</a></li>
-                                        <li><a href="about.html">Haqqımızda</a></li>
-                                        <li class="dropdown"><a href="#">Xidmətlərimiz</a>
-                                            <ul>
-                                                <li><a href="services.html">Bütün Xidmətlər</a></li>
-                                                <li><a href="hvac.html">HVAC Sistemləri</a></li>
-                                                <li><a href="fire-protection.html">Yanğından Mühafizə</a></li>
-                                                <li><a href="management.html">Layihələndirmə</a></li>
-                                                <li><a href="montaj.html">Montaj</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="projects.html">Proyektlər</a></li>
-                                        <li><a href="contact.html">Əlaqə</a></li>
-                                    </ul>
-                                </div>
-                            </nav>
-                            <!-- Main Menu End-->
-                        </div>
-                    </div>
-                </div>
-                <!--End Sticky Header-->
-
-        </header>
+        <?php
+        require_once "layouts/header.php";
+        ?>
         <!--End Main Header -->
 
         <!--Page Title-->

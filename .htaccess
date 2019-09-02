@@ -36,13 +36,19 @@ RewriteRule ^projects(/?)$ projects.php [L,QSA]
 RewriteRule ^projects/([0-9]+)(/?)$ projects.php?page=$1 [L,QSA]
 RewriteRule ^project/(.*)-([0-9]+)(/?)$ project.php?slug=$1&id=$2 [L,QSA]
 
-RewriteRule ^contact(/?)$ index.php?do=contact [L,QSA]
+RewriteRule ^about(/?)$ about.php [L,QSA]
+RewriteRule ^services(/?)$ services.php [L,QSA]
+RewriteRule ^hvac(/?)$ hvac.php [L,QSA]
+RewriteRule ^fire-protection(/?)$ fire-protection.php [L,QSA]
+RewriteRule ^management(/?)$ management.php [L,QSA]
+RewriteRule ^montaj(/?)$ montaj.php [L,QSA]
+RewriteRule ^contact(/?)$ contact.php [L,QSA]
 
 RewriteRule ^404(/?)$ index.php?do=404 [L,QSA]
 
 ## Forbid access to system directory
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /upload/(.*)\ HTTP/ [NC]
-RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /epmanager/browser/(.*)\ HTTP/ [NC]
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /ermanager/browser/(.*)\ HTTP/ [NC]
 
 ## Forbid file requested has php extension
 RewriteCond %{REQUEST_FILENAME} ^.+\.php$
