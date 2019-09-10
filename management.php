@@ -21,7 +21,7 @@ require_once "ermanager/pages/includes/config.php";
         <!--End Main Header -->
 
         <!--Page Title-->
-        <section class="page-title" style="background-image:url(images/background/4.jpg);">
+        <section class="page-title" style="background-image:url(images/resource/management-long.jpg);">
             <div class="auto-container">
                 <h1>Layihələndirmə</h1>
             </div>
@@ -34,9 +34,7 @@ require_once "ermanager/pages/includes/config.php";
             <div class="auto-container">
                 <div class="inner-container clearfix">
                     <ul class="bread-crumb pull-left">
-                        <?php
-                        require_once "layouts/breadcrumb.php";
-                        ?>
+                        <li><a href="<?=SITE_PATH?>">Ana Səhifə</a></li>                                       
                         <li>Layihələndirmə</li>
                     </ul>
                 </div>
@@ -51,23 +49,9 @@ require_once "ermanager/pages/includes/config.php";
                 <div class="row clearfix">
 
                     <!--Content Side-->
-                    <div class="content-side pull-right col-lg-9 col-md-8 col-sm-12 col-xs-12">
+                    <div class="content-side col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="services-single">
-                            <div class="inner-box">
-                                <div class="gallery-image">
-                                    <div class="row clearfix">
-                                        <div class="image-column col-md-7 col-sm-7 col-xs-12">
-                                            <div class="image">
-                                                <img src="images/resource/service-16.jpg" alt="" />
-                                            </div>
-                                        </div>
-                                        <div class="image-column col-md-5 col-sm-5 col-xs-12">
-                                            <div class="image">
-                                                <img src="images/resource/service-17.jpg" alt="" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="inner-box">                                
                                 <h2>Layihələndirmə</h2>
                                 <div class="text">
                                     <p>İnsanlar demək olar ki vaxtlarının 75%-i müxtəlif kateqoriyalı və təyinatlı
@@ -101,32 +85,7 @@ require_once "ermanager/pages/includes/config.php";
 
                             </div>
                         </div>
-                    </div>
-
-                    <!--Sidebar Side-->
-                    <div class="sidebar-side col-lg-3 col-md-4 col-sm-12 col-xs-12">
-                        <aside class="sidebar">
-
-                            <!--Blog Category Widget-->
-                            <?php
-                            require_once "layouts/left.php";
-                            ?>
-
-                            <!--Contact Widhet-->
-                            <div class="sidebar-widget contact-info-widget">
-                                <div class="sidebar-title style-two">
-                                    <h2>Our Brochures</h2>
-                                </div>
-                                <div class="inner-box">
-                                    <ul>
-                                        <li><span class="icon fa fa-phone"></span>+994 123 45 67</li>
-                                        <li><span class="icon fa fa-send"></span>info@ecosphere.com</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                        </aside>
-                    </div>
+                    </div>                    
 
                 </div>
             </div>

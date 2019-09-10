@@ -137,7 +137,7 @@ class uploader {
             ini_set('session.cookie_domain', $_CONFIG['_sessionDomain']);
         switch ($this->cms) {
             case "drupal": break;
-            default: session_start(); break;
+            default: break;
         }
 
         // RELOAD DEFAULT CONFIGURATION
@@ -375,8 +375,6 @@ class uploader {
         $extension = file::getExtension($file['name']);
         $typePatt = strtolower(text::clearWhitespaces($this->types[$this->type]));
 		$newName = $file['name'];
-		$imageTypes=array('jpg','bmp','gif','png','jpeg');
-		$tip2=explode(".",$newName); $tip2=end($tip2);	$tip2=strtolower($tip2);
         // CHECK FOR UPLOAD ERRORS
         if ($file['error'])
             return
@@ -402,7 +400,7 @@ class uploader {
             return $this->label("File name shouldn't begins with '.'");
 
         // EXTENSION CHECK
-        elseif (!$this->validateExtension($extension, $this->type) || !in_array($tip2,$imageTypes) )
+        elseif (!$this->validateExtension($extension, $this->type) || !in_array($extension,explode(" ",allowedExts)) )
             return $this->label("Denied file extension.");
 
         // SPECIAL DIRECTORY TYPES CHECK (e.g. *img)

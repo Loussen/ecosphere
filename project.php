@@ -55,7 +55,7 @@
         <!--Page Title-->
         <section class="page-title" style="background-image:url(<?=SITE_PATH?>/images/background/4.jpg);">
             <div class="auto-container">
-                <h1>Projects details</h1>
+                <h1><?=$current_projects_title?></h1>
             </div>
 
         </section>
@@ -66,10 +66,9 @@
             <div class="auto-container">
                 <div class="inner-container clearfix">
                     <ul class="bread-crumb pull-left">
-                        <li><a href="<?=SITE_PATH?>">Home</a></li>
-                        <li>Projects details</li>
+                        <li><a href="<?=SITE_PATH?>">Ana Səhifə</a></li>
+                        <li>Referansın detalları</li>
                     </ul>
-                    <div class="text pull-right">Certified Company ISO 9001-2008</div>
                 </div>
             </div>
         </div>
@@ -99,17 +98,17 @@
                                     $month = getMonth($month,$main_lang);
                                 ?>
                                 <ul>
-                                    <li><span>Customer :</span><?=$current_projects_customer?></li>
-                                    <li><span>Category :</span><?=$current_projects_category?></li>
-                                    <li><span>Date :</span><?=$day?> <?=$month?>, <?=$year?></li>
-                                    <li><span>Status :</span><?=$current_projects_status?></li>
-                                    <li><span>Live demo :</span><?=$current_projects_demo?></li>
-                                    <li><span>Tags :</span><?=$current_projects_tags?></li>
+                                    <li><span>Sifarişçi :</span><?=$current_projects_customer?></li>
+                                    <li><span>Yer :</span><?=$current_projects_demo?></li>
+                                    <li><span>Kateqoriya :</span><?=$current_projects_category?></li>
+                                    <li><span>Tikinti sahəsi M<sup>2</sup> :</span><?=$current_projects_tags?></li>
+                                    <li><span>Tarix :</span><?=$day?> <?=$month?>, <?=$year?></li>
+                                    <li><span>Status :</span><?=$current_projects_status?></li>                                                                       
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    <h2><?=$current_projects_title?></h2>
+                    <h2>Referansın təsviri</h2>
                     <div class="text">
                         <?=html_entity_decode($current_projects_text)?>
                     </div>

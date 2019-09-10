@@ -26,7 +26,7 @@ require_once "ermanager/pages/includes/config.php";
         <!--End Main Header -->
 
         <!--Page Title-->
-        <section class="page-title" style="background-image:url(images/background/4.jpg);">
+        <section class="page-title" style="background-image:url(images/background/about-us.jpg);">
             <div class="auto-container">
                 <h1>Haqqımızda</h1>
             </div>
@@ -102,18 +102,6 @@ require_once "ermanager/pages/includes/config.php";
                                 </li>
                             </ul>
 
-                            <div class="row clearfix">
-                                <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <div class="image">
-                                        <img src="images/resource/history-1.jpg" alt="" />
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <div class="image">
-                                        <img src="images/resource/history-2.jpg" alt="" />
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
 

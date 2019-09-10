@@ -1426,7 +1426,7 @@ img{
 	top:0px;
 	width:100%;
 	padding:0px 0px;
-	background:#242424;
+	background:#6d6e71;
 	z-index:0;
 	transition:all 500ms ease;
 	-moz-transition:all 500ms ease;
@@ -1865,6 +1865,7 @@ img{
 	-webkit-transition:all 0.5s ease;
 	-ms-transition:all 0.5s ease;
 	-o-transition:all 0.5s ease;
+	height: 250px;
 }
 
 .services-block .inner-box:hover .image img{
@@ -2328,6 +2329,7 @@ img{
 	-o-transition:all 300ms ease;
 	-moz-transition:all 300ms ease;
 	transition:all 300ms ease;
+	padding: 0 10px;
 }
 
 .clients-section .sponsors-outer .image-box img{
@@ -2719,7 +2721,7 @@ img{
 
 .main-footer{
 	position:relative;
-	background-color:#191919;
+	background-color:#6d6e71;
 }
 
 .main-footer .widgets-section{
@@ -7745,3 +7747,15 @@ img{
 	color:#363636 !important;
 	font-weight:700;
 }
+
+.owl-carousel .owl-stage {
+	display:flex;
+	align-items:center;
+}
+
+/*div.services-block-two div.image{*/
+
+	/*vertical-align: middle;*/
+	/*height: 270px;*/
+	/*display: table-cell;*/
+/*}*/

@@ -19,8 +19,8 @@
   *        here, they can be accessed in config.php via $GLOBALS array.
   *        It's recommended to use constants instead.
   */
-include "../pages/includes/config.php";
-include "../pages/includes/check.php";
+require_once "../pages/__includes/config.php";
+require_once "../pages/__includes/check.php";
 // PHP VERSION CHECK
 if (substr(PHP_VERSION, 0, strpos(PHP_VERSION, '.')) < 5)
     die("You are using PHP " . PHP_VERSION . " when KCFinder require at least version 5! Some systems has an option to change the active PHP version. Please refer to your hosting provider or upgrade your PHP distribution.");

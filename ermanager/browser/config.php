@@ -15,16 +15,17 @@
 // IMPORTANT!!! Do not remove uncommented settings in this file even if
 // you are using session configuration.
 // See http://kcfinder.sunhater.com/install for setting descriptions
+if(!defined('allowedExts'))
+	define("allowedExts", "jpg jpeg png bmp gif pdf doc docx xls xlsx ppt pptx cdr psd txt avi mp4 mp3 3gp flv swf mpg mpeg mov wmv ogg");
 
 $_CONFIG = array(
-
     'disabled' => false,
     'denyZipDownload' => false,
     'denyUpdateCheck' => true,
-    'denyExtensionRename' => true,
+    'denyExtensionRename' => false,
 
     'theme' => "oxygen",
-
+	
     'uploadURL' => "../../images/upload",
     'uploadDir' => "",
 	//'uploadURL' => "/images/upload/",
@@ -44,13 +45,13 @@ $_CONFIG = array(
         ),
 
         'dirs' => array(
-            'create' => false,
-            'delete' => false,
+            'create' => true,
+            'delete' => true,
             'rename' => false
         )
     ),
 
-    'deniedExts' => "exe com msi bat php phps phtml php3 php4 cgi pl",
+    'deniedExts' => "exe com msi bat php phps phtml php3 php4 cgi pl php5 php6 php7 asp aspx",
 
     'types' => array(
 
@@ -61,7 +62,7 @@ $_CONFIG = array(
 
         // TinyMCE types
         'file'    =>  "",
-        'media'   =>  "swf flv avi mpg mpeg qt mov wmv asf rm mp4",
+        'media'   =>  "swf flv avi mpg mpeg qt mov wmv asf rm",
         'image'   =>  "*img",
     ),
 
@@ -93,7 +94,7 @@ $_CONFIG = array(
 
     // THE FOLLOWING SETTINGS CANNOT BE OVERRIDED WITH SESSION CONFIGURATION
     '_check4htaccess' => false,
-    '_tinyMCEPath' => "../js/tiny_mce",
+    '_tinyMCEPath' => "../assets/js/tiny_mce",
 
     '_sessionVar' => &$_SESSION['KCFINDER'],
     //'_sessionLifetime' => 30,

@@ -330,8 +330,6 @@ class browser extends uploader {
             $this->errorMsg("You cannot rename the extension of files!");
 
         $newName = $this->normalizeFilename(trim($this->post['newName']));
-		$imageTypes=array('jpg','bmp','gif','png','jpeg');
-		$tip2=explode(".",$newName); $tip2=end($tip2);	$tip2=strtolower($tip2);
         if (!strlen($newName))
             $this->errorMsg("Please enter new file name.");
         if (preg_match('/[\/\\\\]/s', $newName))
@@ -342,7 +340,7 @@ class browser extends uploader {
         if (file_exists($newName))
             $this->errorMsg("A file or folder with that name already exists.");
         $ext = file::getExtension($newName);
-        if (!$this->validateExtension($ext, $this->type) || !in_array($tip2,$imageTypes) )
+        if (!$this->validateExtension($ext, $this->type) || !in_array($extension,explode(" ",allowedExts)) )
             $this->errorMsg("Denied file extension.");
         if (!@rename($file, $newName))
             $this->errorMsg("Unknown error.");
@@ -396,7 +394,7 @@ class browser extends uploader {
                 $error[] = $this->label("The file '{file}' does not exist.", $replace);
             elseif (substr($base, 0, 1) == ".")
                 $error[] = "$base: " . $this->label("File name shouldn't begins with '.'");
-            elseif (!$this->validateExtension($ext, $type))
+            elseif (!$this->validateExtension($ext, $type) || !in_array($extension,explode(" ",allowedExts)) )
                 $error[] = "$base: " . $this->label("Denied file extension.");
             elseif (file_exists("$dir/$base"))
                 $error[] = "$base: " . $this->label("A file or folder with that name already exists.");
@@ -447,7 +445,7 @@ class browser extends uploader {
                 $error[] = $this->label("The file '{file}' does not exist.", $replace);
             elseif (substr($base, 0, 1) == ".")
                 $error[] = "$base: " . $this->label("File name shouldn't begins with '.'");
-            elseif (!$this->validateExtension($ext, $type))
+            elseif (!$this->validateExtension($ext, $type) || !in_array($extension,explode(" ",allowedExts)) )
                 $error[] = "$base: " . $this->label("Denied file extension.");
             elseif (file_exists("$dir/$base"))
                 $error[] = "$base: " . $this->label("A file or folder with that name already exists.");

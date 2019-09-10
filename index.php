@@ -40,7 +40,7 @@ require_once "ermanager/pages/includes/config.php";
                             data-transition="parallaxvertical">
                             <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10"
                                 data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina=""
-                                src="images/main-slider/image-1.jpg">
+                                src="images/main-slider/image-2.jpg">
 
                             <div class="tp-caption" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                                 data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on"
@@ -50,7 +50,6 @@ require_once "ermanager/pages/includes/config.php";
                                 data-y="['middle','middle','middle','middle']"
                                 data-textalign="['top','top','top','top']"
                                 data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
-                                <h2>We Provide Innovated <br> Industrial Solutions</h2>
                             </div>
 
                             <div class="tp-caption" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
@@ -60,10 +59,7 @@ require_once "ermanager/pages/includes/config.php";
                                 data-voffset="['70','40','20','0']" data-x="['left','left','left','left']"
                                 data-y="['middle','middle','middle','middle']"
                                 data-textalign="['top','top','top','top']"
-                                data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
-                                <div class="text">We deliver sustainable solutions and services to various industries
-                                    within the USA. Our partners and clients value us for the quality of our products.
-                                </div>
+                                data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>                                
                             </div>
 
                         </li>
@@ -78,7 +74,7 @@ require_once "ermanager/pages/includes/config.php";
                             data-transition="parallaxvertical">
                             <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10"
                                 data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina=""
-                                src="images/main-slider/image-2.jpg">
+                                src="images/main-slider/image-3.jpg">
 
                             <div class="tp-caption" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                                 data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on"
@@ -87,8 +83,7 @@ require_once "ermanager/pages/includes/config.php";
                                 data-voffset="['-50','-90','-90','-120']" data-x="['left','left','left','left']"
                                 data-y="['middle','middle','middle','middle']"
                                 data-textalign="['top','top','top','top']"
-                                data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
-                                <h2>Modern technology <br> for your industry</h2>
+                                data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>                                
                             </div>
 
                             <div class="tp-caption" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
@@ -99,9 +94,6 @@ require_once "ermanager/pages/includes/config.php";
                                 data-y="['middle','middle','middle','middle']"
                                 data-textalign="['top','top','top','top']"
                                 data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
-                                <div class="text">We deliver sustainable solutions and services to various industries
-                                    within the USA. Our partners and clients value us for the quality of our products.
-                                </div>
                             </div>
 
                         </li>
@@ -158,8 +150,8 @@ require_once "ermanager/pages/includes/config.php";
                     <div class="services-block col-md-4 col-sm-6 col-xs-12">
                         <div class="inner-box">
                             <div class="image">
-                                <a href="<?=SITE_PATH?>/hvac"><img src="images/resource/service-1.jpg"
-                                        alt="" /></a>
+                                <a href="<?=SITE_PATH?>/hvac"><img src="images/resource/hvac.jpg"
+                                        alt="hvac" /></a>
                             </div>
                             <div class="lower-content">
                                 <h3><a href="<?=SITE_PATH?>/hvac">HVAC Sistemləri</a></h3>
@@ -171,8 +163,8 @@ require_once "ermanager/pages/includes/config.php";
                     <div class="services-block col-md-4 col-sm-6 col-xs-12">
                         <div class="inner-box">
                             <div class="image">
-                                <a href="<?=SITE_PATH?>/fire-protection"><img src="images/resource/service-2.jpg"
-                                        alt="" /></a>
+                                <a href="<?=SITE_PATH?>/fire-protection"><img src="images/resource/fire-protection.jpg"
+                                        alt="fire-protection" /></a>
                             </div>
                             <div class="lower-content">
                                 <h3><a href="<?=SITE_PATH?>/fire-protection">Yanğından Mühafizə</a></h3>
@@ -184,16 +176,17 @@ require_once "ermanager/pages/includes/config.php";
                     <div class="services-block col-md-4 col-sm-6 col-xs-12">
                         <div class="inner-box">
                             <div class="image">
-                                <a href="<?=SITE_PATH?>/management"><img src="images/resource/service-4.jpg"
-                                        alt="" /></a>
+                                <a href="<?=SITE_PATH?>/montaj"><img src="images/resource/installing.jpg"
+                                        alt="montaj" /></a>
                             </div>
                             <div class="lower-content">
-                                <h3><a href="<?=SITE_PATH?>/management">Layihələndirmə</a></h3>
+                                <h3><a href="<?=SITE_PATH?>/montaj">Montaj</a></h3>
                             </div>
                         </div>
                     </div>
 
                 </div>
+
 
             </div>
         </section>
@@ -262,43 +255,36 @@ require_once "ermanager/pages/includes/config.php";
 
                 <div class="sponsors-outer">
                     <!--Sponsors Carousel-->
-                    <ul class="sponsors-carousel owl-carousel owl-theme">
+                    <ul class="sponsors-carousel owl-carousel owl-theme" >
                         <li class="slide-item">
-                            <figure class="image-box"><a href="#"><img src="images/clients/1.jpg" alt=""></a></figure>
+                            <figure class="image-box"><a href="https://www.viessmann.com/com/en.html"><img src="images/clients/viessmann.png" alt="viessmann"></a></figure>
                         </li>
                         <li class="slide-item">
-                            <figure class="image-box"><a href="#"><img src="images/clients/2.jpg" alt=""></a></figure>
+                            <figure class="image-box"><a href="https://wilo.com/en/index.html"><img src="images/clients/wilo.png" alt="wilo"></a></figure>
                         </li>
                         <li class="slide-item">
-                            <figure class="image-box"><a href="#"><img src="images/clients/3.jpg" alt=""></a></figure>
+                            <figure class="image-box"><a href="https://ventilation-system.com/"><img src="images/clients/vents.svg" alt="vents"></a></figure>
                         </li>
                         <li class="slide-item">
-                            <figure class="image-box"><a href="#"><img src="images/clients/4.jpg" alt=""></a></figure>
+                            <figure class="image-box"><a href="#"><img src="images/clients/giacomini.png" alt="giacomini"></a></figure>
                         </li>
                         <li class="slide-item">
-                            <figure class="image-box"><a href="#"><img src="images/clients/5.jpg" alt=""></a></figure>
+                            <figure class="image-box"><a href="#"><img src="images/clients/mitsubishi.svg" alt="mitsubishi"></a></figure>
                         </li>
                         <li class="slide-item">
-                            <figure class="image-box"><a href="#"><img src="images/clients/6.jpg" alt=""></a></figure>
+                            <figure class="image-box"><a href="http://www.midea.com/global/"><img src="images/clients/midea.png" alt="midea"></a></figure>
                         </li>
                         <li class="slide-item">
-                            <figure class="image-box"><a href="#"><img src="images/clients/1.jpg" alt=""></a></figure>
+                            <figure class="image-box"><a href="https://www.tyco.com/"><img src="images/clients/tyco.png" alt="tyco"></a></figure>
                         </li>
                         <li class="slide-item">
-                            <figure class="image-box"><a href="#"><img src="images/clients/2.jpg" alt=""></a></figure>
+                            <figure class="image-box"><a href="https://www.daikin.com/"><img src="images/clients/daikin.png" alt="daikin"></a></figure>
                         </li>
                         <li class="slide-item">
-                            <figure class="image-box"><a href="#"><img src="images/clients/3.jpg" alt=""></a></figure>
-                        </li>
-                        <li class="slide-item">
-                            <figure class="image-box"><a href="#"><img src="images/clients/4.jpg" alt=""></a></figure>
-                        </li>
-                        <li class="slide-item">
-                            <figure class="image-box"><a href="#"><img src="images/clients/5.jpg" alt=""></a></figure>
-                        </li>
+                            <figure class="image-box"><a href="http://global.gree.com/"><img src="images/clients/gree.png" alt="gree"></a></figure>
+                        </li>                    
                     </ul>
                 </div>
-
             </div>
         </section>
         <!--End Clients Section-->

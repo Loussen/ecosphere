@@ -77,16 +77,16 @@ require_once "ermanager/pages/includes/config.php";
                     </div>
 
                     <!--Services Block-->
-                    <div class="services-block col-md-4 col-sm-6 col-xs-12">
-                        <div class="inner-box">
-                            <div class="image">
-                                <a href="<?=SITE_PATH?>/management"><img src="images/resource/service-3.jpg" alt="" /></a>
-                            </div>
-                            <div class="lower-content">
-                                <h3><a href="<?=SITE_PATH?>/management">Layihələndirmə</a></h3>
-                            </div>
-                        </div>
-                    </div>
+<!--                    <div class="services-block col-md-4 col-sm-6 col-xs-12">-->
+<!--                        <div class="inner-box">-->
+<!--                            <div class="image">-->
+<!--                                <a href="--><?//=SITE_PATH?><!--/management"><img src="images/resource/service-3.jpg" alt="" /></a>-->
+<!--                            </div>-->
+<!--                            <div class="lower-content">-->
+<!--                                <h3><a href="--><?//=SITE_PATH?><!--/management">Layihələndirmə</a></h3>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
 
                     <div class="services-block col-md-4 col-sm-6 col-xs-12">
                         <div class="inner-box">

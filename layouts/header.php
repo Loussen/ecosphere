@@ -38,7 +38,7 @@
             <div class="outer-container clearfix">
                 <!--Logo Box-->
                 <div class="logo-box">
-                    <div class="logo"><a href="<?=SITE_PATH?>"><img src="images/logo_eco_dark.png" style="width: 200px; height: 70px;" alt=""></a></div>
+                    <div class="logo"><a href="<?=SITE_PATH?>"><img src="<?=SITE_PATH?>/images/logo_eco_dark.png" style="width: 200px; height: 70px;" alt="Ecosphere"></a></div>
                 </div>
 
                 <!--Nav Outer-->
@@ -60,16 +60,16 @@
                             <ul class="navigation clearfix">
                                 <li><a href="<?=SITE_PATH?>">Ana Səhifə</a></li>
                                 <li><a href="<?=SITE_PATH?>/about">Haqqımızda</a></li>
+                                <li><a href="<?=SITE_PATH?>/management">Layihələndirmə</a></li>
                                 <li class="dropdown"><a href="#">Xidmətlərimiz</a>
                                     <ul>
                                         <li><a href="<?=SITE_PATH?>/services">Bütün Xidmətlər</a></li>
                                         <li><a href="<?=SITE_PATH?>/hvac">HVAC Sistemləri</a></li>
-                                        <li><a href="<?=SITE_PATH?>/fire-protection">Yanğından Mühafizə</a></li>
-                                        <li><a href="<?=SITE_PATH?>/management">Layihələndirmə</a></li>
+                                        <li><a href="<?=SITE_PATH?>/fire-protection">Yanğından Mühafizə</a></li>                                        
                                         <li><a href="<?=SITE_PATH?>/montaj">Montaj</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="<?=SITE_PATH?>/projects">Proyektlər</a></li>
+                                <li><a href="<?=SITE_PATH?>/projects">Referanslar</a></li>
                                 <li><a href="<?=SITE_PATH?>/contact">Əlaqə</a></li>
                             </ul>
                         </div>
@@ -87,7 +87,7 @@
             <div class="sticky-inner-container clearfix">
                 <!--Logo-->
                 <div class="logo pull-left">
-                    <a href="index.html" class="img-responsive"><img src="images/logo_eco_small.png" alt=""
+                    <a href="<?=SITE_PATH?>" class="img-responsive"><img src="<?=SITE_PATH?>/images/logo_eco_small.png" alt="Ecosphere"
                                                                      title=""></a>
                 </div>
 
@@ -109,16 +109,16 @@
                             <ul class="navigation clearfix">
                                 <li><a href="<?=SITE_PATH?>">Ana Səhifə</a></li>
                                 <li><a href="<?=SITE_PATH?>/about">Haqqımızda</a></li>
+                                <li><a href="<?=SITE_PATH?>/management">Layihələndirmə</a></li>
                                 <li class="dropdown"><a href="#">Xidmətlərimiz</a>
                                     <ul>
                                         <li><a href="<?=SITE_PATH?>/services">Bütün Xidmətlər</a></li>
                                         <li><a href="<?=SITE_PATH?>/hvac">HVAC Sistemləri</a></li>
-                                        <li><a href="<?=SITE_PATH?>/fire-protection">Yanğından Mühafizə</a></li>
-                                        <li><a href="<?=SITE_PATH?>/management">Layihələndirmə</a></li>
+                                        <li><a href="<?=SITE_PATH?>/fire-protection">Yanğından Mühafizə</a></li>                                      
                                         <li><a href="<?=SITE_PATH?>/montaj">Montaj</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="<?=SITE_PATH?>/projects">Proyektlər</a></li>
+                                <li><a href="<?=SITE_PATH?>/projects">Referanslar</a></li>
                                 <li><a href="<?=SITE_PATH?>/contact">Əlaqə</a></li>
                             </ul>
                         </div>

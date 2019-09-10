@@ -37,7 +37,7 @@ if($_POST){
 		</div>
 		<div id="login_body_window">
 			<div class="inner">
-                <img src="<?=SITE_PATH?>/images/logo.png" alt="logo" style="width: 80%;"/>
+                <img src="<?=SITE_PATH?>/images/logo_eco.png" alt="logo" style="width: 95%;"/>
 				<form action="login.php" method="post" id="form_login" name="form_login">
 					<p><input type="text" id="username" name="login" style="width:285px" title="Username"/></p>
 					<p><input type="password" id="password" name="pass" style="width:285px" title="******"/></p>

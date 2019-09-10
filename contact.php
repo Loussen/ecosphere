@@ -22,7 +22,7 @@ require_once "ermanager/pages/includes/config.php";
         <!--End Main Header -->
 
         <!--Page Title-->
-        <section class="page-title" style="background-image:url(images/background/4.jpg);">
+        <section class="page-title" style="background-image:url(images/resource/contact.png); background-position: top;">
             <div class="auto-container">
                 <h1>Əlaqə</h1>
             </div>

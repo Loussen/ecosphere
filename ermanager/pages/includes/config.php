@@ -1,7 +1,8 @@
 <?php
 ob_start(); session_start();
-error_reporting(E_ERROR | E_WARNING | E_PARSE);
+// error_reporting(E_ERROR | E_WARNING | E_PARSE);
 //error_reporting(E_ALL);
+error_reporting(0);
 $timezone = "Asia/Baku"; if(function_exists('date_default_timezone_set')) date_default_timezone_set($timezone);
 
 define('host','localhost');
@@ -25,10 +26,11 @@ $time=time();
 $this_day=date("Y-m-d");
 
 // PHP caching
-require_once 'cache.class.php';
-$cache = new Cache();
-$cache->eraseExpired();
-if(isset($_GET["eraseAll"])) $cache->eraseAll();
+// require_once 'cache.class.php';
+// $cache = new Cache();
+// $cache->eraseExpired();
+// if(isset($_GET["eraseAll"])) $cache->eraseAll();
+
 
 function connect(){
     global $db;
@@ -52,7 +54,7 @@ if(is_file('ermanager/langs/index.php')) include 'ermanager/langs/index.php';
 elseif(is_file('langs/ermanager/index.php')) include 'langs/ermanager/index.php';
 
 
-$contact_config = mysqli_fetch_assoc(mysqli_query($db,"SELECT `email`,`phone`,`facebook`,`youtube`,`twitter`,`google_map`,`address` FROM `contacts` WHERE `lang_id`='$main_lang'"));
+$contact_config = mysqli_fetch_assoc(mysqli_query($db,"SELECT `email`,`phone`,`facebook`,`youtube`,`twitter`,`google_map`,`address`,`footer` FROM `contacts` WHERE `lang_id`='$main_lang'"));
 
 $hava_active = 0;
 if($hava_active==1)	//Hava update

@@ -12,7 +12,7 @@
                         <div class="footer-column col-md-7 col-sm-6 col-xs-12">
                             <div class="footer-widget logo-widget">
                                 <div class="logo">
-                                    <a href="<?=SITE_PATH?>"><img src="images/logo_eco_footer.png" alt="" /></a>
+                                    <a href="<?=SITE_PATH?>"><img src="<?=SITE_PATH?>/images/logo_eco_footer.png" alt="Ecosphere" /></a>
                                 </div>
                                 <div class="text"><?=nl2br($contact_config['footer'])?></div>
                             </div>
@@ -21,7 +21,7 @@
                         <!--Footer Column-->
                         <div class="footer-column col-md-5 col-sm-6 col-xs-12">
                             <div class="footer-widget links-widget">
-                                <h2>Quick Links</h2>
+                                <h2>Qısa Yollar</h2>
                                 <div class="widget-content">
                                     <ul class="list">
                                         <li><a href="<?=SITE_PATH?>">Ana səhifə</a></li>
@@ -47,8 +47,7 @@
                                 <div class="widget-content">
                                     <ul class="list">
                                         <li><a href="<?=SITE_PATH?>/hvac">HVAC Sistemləri</a></li>
-                                        <li><a href="<?=SITE_PATH?>/services">Yanğından Mühafizə</a></li>
-                                        <li><a href="<?=SITE_PATH?>/fire-protection">Layihələndirmə</a></li>
+                                        <li><a href="<?=SITE_PATH?>/fire-protection">Yanğından Mühafizə</a></li>
                                         <li><a href="<?=SITE_PATH?>/montaj">Montaj</a></li>
                                     </ul>
                                 </div>

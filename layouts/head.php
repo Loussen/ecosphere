@@ -17,8 +17,8 @@
 <!--Color Themes-->
 <link id="theme-color-file" href="<?=SITE_PATH?>/css/color-themes/default-theme.css" rel="stylesheet">
 
-<link rel="shortcut icon" href="<?=SITE_PATH?>/images/favicon.png" type="image/x-icon">
-<link rel="icon" href="<?=SITE_PATH?>/images/favicon.png" type="image/x-icon">
+<link rel="shortcut icon" href="<?=SITE_PATH?>/images/favicon-eco.png" type="image/x-icon">
+<link rel="icon" href="<?=SITE_PATH?>/images/favicon-eco.png" type="image/x-icon">
 <!-- Responsive -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">

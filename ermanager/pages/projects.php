@@ -213,10 +213,10 @@ elseif($down>0 && mysqli_num_rows(mysqli_query($db,"select id from $do where aut
                       Status : <br />
                       <input type="text" name="status_'.$row["id"].'" value="'.$information["status"].'" style="width:800px" />
                       <br /><br />
-                      Live demo : <br />
+                      Yer : <br />
                       <input type="text" name="demo_'.$row["id"].'" value="'.$information["demo"].'" style="width:800px" />
                       <br /><br />
-                      Tags : <br />
+                      Tikinti sahəsi : <br />
                       <input type="text" name="tags_'.$row["id"].'" value="'.$information["tags"].'" style="width:800px" />
                       <br /><br />
                       Text : <br />
